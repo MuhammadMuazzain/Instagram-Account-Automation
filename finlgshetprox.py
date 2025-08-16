@@ -143,7 +143,8 @@ def create_account():
 
     email_sent_time = datetime.now(timezone.utc)
 
-    options = uc.ChromeOptions()
+    # options = uc.ChromeOptions()
+    options=uc.ChromeOptions()
 
     # Randomly select a proxy
     selected_proxy_ip = "82.163.62.27"

@@ -1,3 +1,5 @@
+# Real Good
+
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -89,6 +91,7 @@ def create_proxy_auth_extension(proxy_host, proxy_port, proxy_user, proxy_pass, 
 
     with zipfile.ZipFile(extension_path, 'w') as zp:
         zp.writestr("manifest.json", manifest_json)
+        # zp.writestr("background.js", background_js)
         zp.writestr("background.js", background_js)
     
     return extension_path
